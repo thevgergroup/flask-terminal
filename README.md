@@ -26,12 +26,15 @@ The frontend leverages xterm.js for rendering the terminal interface.
 Communication is handled through HTTP polling, circumventing the need for WebSockets. 
 The application is structured as a Flask Blueprint, allowing ease of integration into larger Flask applications.
 
+
 ## Features
 
 - **Browser-based Terminal**: Provides a terminal interface within the browser using xterm.js.
 - **Command Execution**: Supports the execution of /bin/sh commands, including the capability to spawn additional shells.
 - **Real-time Output**: Displays command execution output in real-time, facilitated by HTTP polling.
 - **Command Logging**: Utilizes a Python logger to log terminal activities, aiding in audit and debugging.
+
+![Demo](https://raw.githubusercontent.com/thevgergroup/flask-terminal/main/media/2024-04-05_19-22-14%20(1).gif)
 
 ## Getting started
 
