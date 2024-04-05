@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "flask-terminal"
+version = "0.0.0"
+description = "Browser based terminal for flask, use with hyper HYPER caution"
+authors = ["patrick o'leary <pjaol@pjaol.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^3.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
