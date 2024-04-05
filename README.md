@@ -103,4 +103,13 @@ if __name__ == '__main__':
     app.run(port=8080)
 ```
 
+Launch your flask app as normal
+```sh
+flask -A app.py --debug run --port 8000
+```
+
 This will now make the terminal available at http://localhost:8080/terminal
+The URL can be configured via the url_prefix
+```python
+app.register_blueprint(terminal_blueprint, url_prefix='/terminal')
+```
