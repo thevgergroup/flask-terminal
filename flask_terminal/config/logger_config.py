@@ -16,7 +16,7 @@ def configure_logger(name):
     
     # Check if logs directory exists, if not create it
     if not os.path.exists('logs'):
-        os.makedirs('logs')
+        os.makedirs('logs', exist_ok=True)
     
     # Create file handler and set level to info
     file_handler = RotatingFileHandler('logs/terminal_activities.log', maxBytes=10240, backupCount=5)
